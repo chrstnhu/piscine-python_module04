@@ -5,9 +5,14 @@ data = loader.load('../data/athlete_events.csv')
 # Output
 # Loading dataset of dimensions 271116 x 15
 
+def print_prettier(result):
+    print(f"========== Medal ===========\n")
+    for key, value in result.items():
+        print(f"{key}: {value}")
+
 from HowManyMedals import how_many_medals
 result = how_many_medals(data, 'Kjetil Andr Aamodt')
-print(result)
+print_prettier(result)
 
 # Output
 # {1992: {’G’: 1, ’S’: 0, ’B’: 1},
