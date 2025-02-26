@@ -22,9 +22,9 @@ class FileLoader:
             return None
 
     def display(self, df, n):
-        # '''
-        # Takes a numpy array as an argument and displays the corresponding RGB image.
-        # '''
+        '''
+        Takes a pandas.DataFrame as an argument and size(n) and displays
+        '''
 
         # Check if the input is a pandas DataFrame
         if not isinstance(df, pd.DataFrame):

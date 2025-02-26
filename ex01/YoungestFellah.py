@@ -9,14 +9,14 @@ def youngest_fellah(data, year):
 
     # Filter the feminine and masculine athletes
     feminine = result.loc[result['Sex'] == 'F']
-    masculine = result.loc[result['Sex'] == 'M']
     # print(f"Find feminine: {feminine}")
+    masculine = result.loc[result['Sex'] == 'M']
     # print(f"Find masculine {masculine}")
 
     # Get the youngest athletes
     youngest_f = feminine['Age'].min()
-    youngest_m = masculine['Age'].min()
     # print(f"Find youngest feminine: {youngest_f}")
+    youngest_m = masculine['Age'].min()
     # print(f"Find youngest masculine: {youngest_m}")
 
     return {'f': youngest_f, 'm': youngest_m}
